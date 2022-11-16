@@ -1,4 +1,8 @@
 @media print {
+     body {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+     }
 
      .col-sm-1,
      .col-sm-2,
@@ -67,4 +71,12 @@
           clear: both;
           page-break-after: always;
      }
+
+     .download-cv {
+          visibility: hidden;
+     }
+}
+
+@page{
+     size: a4;
 }
